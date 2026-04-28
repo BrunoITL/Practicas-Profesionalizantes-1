@@ -1,0 +1,16 @@
+.producto img{
+    transition: 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+}
+
+.productos {
+    display: flex;
+    gap: 20px;
+}
+
+.producto {
+    width: 300px;
+}
