@@ -1,6 +1,8 @@
 .producto img{
     width: 100%;
-    transition: 0.3s
+    transition: 0.3s;
+    height: 350px;
+    object-fit: cover;
 }
 
 .producto img:hover {
@@ -9,6 +11,7 @@
 
 .producto:hover {
     transform: scale(1.03);
+    transform: translateY(-5px);
 }
 
 .productos {
@@ -16,6 +19,7 @@
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    transform: translateY(-130px);
 }
 
 .producto {
@@ -32,8 +36,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #B4A997;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -52,6 +57,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -95,4 +101,39 @@ header {
     background-color: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 15px;
+    z-index: 1000;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3)
+}
+
+.hero video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: lightgray;
+    width: 100%;
+    transform: translateY(-263px);
 }
