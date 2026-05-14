@@ -1,6 +1,12 @@
+:root {
+    --color-principal: #b4a997;
+    --blanco: #ffffff;
+    --transicion: 0.3s ease-in-out;
+}
+
 .producto img{
     width: 100%;
-    transition: 0.3s;
+    transition: var(--transicion);
     height: 350px;
     object-fit: cover;
 }
@@ -20,6 +26,7 @@
     justify-content: center;
     padding: 20px;
     transform: translateY(-130px);
+    flex-wrap: wrap;
 }
 
 .producto {
@@ -28,7 +35,7 @@
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    background-color: white;
+    background-color: var(--blanco);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -36,7 +43,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #B4A997;
+    background-color: var(--color-principal);
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
@@ -58,7 +65,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    transition: 0.3s;
+    transition: var(--transicion);
 }
 
 nav a:hover {
@@ -89,7 +96,7 @@ h1 {
 
 .whatsapp-float img{
     width: 60px;
-    transition: 0.3s;
+    transition: var(--transicion);
 }
 
 .whatsapp-float img:hover {
@@ -138,5 +145,6 @@ header {
     flex-direction: column;
     color: lightgray;
     width: 100%;
-    transform: translateY(-263px);
+    transform: translateY(0px);
 }
+
